@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 shadow-lg mb-4 z-[999] dark:border-b dark:border-mainColor">
+      <nav className="bg-white border-gray-200 dark:bg-gray-900 shadow-lg fixed top-0 left-0 right-0 z-[999] dark:border-b dark:border-mainColor">
         <div className="container flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
             onClick={() => setOpen(false)}

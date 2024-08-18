@@ -12,3 +12,12 @@ body {
   color: #FA3715 !important;
 }
 
+.name{
+  -webkit-text-fill-color: transparent;
+  background: rgb(250,55,21);
+  background: radial-gradient(circle, rgb(247, 88, 60) 0%, #FA3715 100%);
+  background-clip: text;
+}
+
+
+

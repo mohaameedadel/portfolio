@@ -18,9 +18,9 @@ export default function Home() {
         <div className="flex flex-col-reverse md:flex-row gap-10 lg:gap-24">
           <div data-aos="fade-right" className="info font-bold flex items-center text-center md:text-start">
             <div>
-              <span  className="text-4xl text-gray-400 mb-4 block">Hello👋</span>
-              <h1  className="text-6xl mb-4">
-                I'm <span className="name font-extrabold">Mohamed Adel</span>,
+              <span  className="text-4xl text-gray-400 mb-4 block font-main">Hello👋</span>
+              <h1  className="text-6xl mb-4 font-main">
+                I'm <span className="name font-extrabold px-1">Mohamed Adel</span>,
               </h1>
               <p  className="text-4xl  px-2 ">a Frontend Developer</p>
               <div className="icons mt-4">

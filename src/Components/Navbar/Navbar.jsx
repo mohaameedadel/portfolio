@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import logo from "../../assets/images/logo.png";
 import { Link, NavLink } from "react-router-dom";
+import { DarkContext } from "../../../Context/DarkContext";
 export default function Navbar() {
+  let {setDark , dark , setColorLight,setColorDark} = useContext(DarkContext)
   const [theme, setTheme] = useState(false);
-  const [dark, setDark] = useState(null);
+  
   const [open, setOpen] = useState(false);
   let html = document.getElementById("html");
   function darkLightMode() {

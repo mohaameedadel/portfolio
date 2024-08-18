@@ -6,6 +6,7 @@ import Home from "./Components/Home/Home";
 import Contact from "./Components/Contact/Contact";
 import About from "./Components/About/About";
 import NotFound from "./Components/NotFound/NotFound";
+import DarkContextProvider from "../Context/DarkContext";
 
 function App() {
   let routers = createBrowserRouter([
@@ -23,8 +24,9 @@ function App() {
 
   return (
     <>
-     
+    <DarkContextProvider>
       <RouterProvider router={routers}></RouterProvider>
+    </DarkContextProvider>
     </>
   );
 }

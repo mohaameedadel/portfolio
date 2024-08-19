@@ -122,6 +122,22 @@ export default function Navbar() {
               </li>
               <li onClick={() => setOpen(false)}>
                 <NavLink
+                  to="skills"
+                  className="font-main tracking-widest block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainColor md:dark:hover:text-mainColor dark:text-white dark:hover:bg-gray-700 dark:hover:text-mainColor md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  skills
+                </NavLink>
+              </li>
+              <li onClick={() => setOpen(false)}>
+                <NavLink
+                  to="education"
+                  className="font-main tracking-widest block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainColor md:dark:hover:text-mainColor dark:text-white dark:hover:bg-gray-700 dark:hover:text-mainColor md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  education
+                </NavLink>
+              </li>
+              <li onClick={() => setOpen(false)}>
+                <NavLink
                   to="contact"
                   className="font-main tracking-widest block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainColor md:dark:hover:text-mainColor dark:text-white dark:hover:bg-gray-700 dark:hover:text-mainColor md:dark:hover:bg-transparent dark:border-gray-700"
                 >

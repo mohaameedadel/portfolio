@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import bootstrap from "../../assets/images/skills/bootstrap.png";
 import css from "../../assets/images/skills/css.png";
@@ -18,6 +18,7 @@ import tailwindcss from "../../assets/images/skills/tailwindcss.png";
 import typescript from "../../assets/images/skills/typescript.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Heading from "../Heading/Heading";
 export default function Skills() {
   var settings = {
     dots: false,
@@ -56,118 +57,132 @@ export default function Skills() {
       },
     ],
   };
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+    AOS.refresh();
+  }, []);
   return (
-    <div data-aos="zoom-in" className="slider-container my-8 ">
-      <Slider {...settings}>
-        <div className="py-4 text-center ">
-          <div className="img mb-4">
-            <img src={html} className="w-[50px] mx-auto" alt="html" />
+    <div className="container">
+      <Heading text={"Skills"} />
+      <div data-aos="zoom-in" className="slider-container my-8 ">
+        <Slider {...settings}>
+          <div className="py-4 text-center ">
+            <div className="img mb-4">
+              <img src={html} className="w-[50px] mx-auto" alt="html" />
+            </div>
+            <p>HTML</p>
           </div>
-          <p>HTML</p>
-        </div>
-        <div className="py-4 text-center">
-          <div className="img mb-4">
-            <img src={css} className="w-[50px] mx-auto" alt="css" />
+          <div className="py-4 text-center">
+            <div className="img mb-4">
+              <img src={css} className="w-[50px] mx-auto" alt="css" />
+            </div>
+            <p>CSS</p>
           </div>
-          <p>CSS</p>
-        </div>
-        <div className="py-4 text-center">
-          <div className="img mb-4 ">
-            <img src={js} className="w-[50px] mx-auto" alt="js" />
+          <div className="py-4 text-center">
+            <div className="img mb-4 ">
+              <img src={js} className="w-[50px] mx-auto" alt="js" />
+            </div>
+            <p>javascript</p>
           </div>
-          <p>javascript</p>
-        </div>
-        <div className="py-4 text-center">
-          <div className="img mb-4 ">
-            <img
-              src={typescript}
-              className="w-[50px] mx-auto"
-              alt="typescript"
-            />
+          <div className="py-4 text-center">
+            <div className="img mb-4 ">
+              <img
+                src={typescript}
+                className="w-[50px] mx-auto"
+                alt="typescript"
+              />
+            </div>
+            <p>typescript</p>
           </div>
-          <p>typescript</p>
-        </div>
-        <div className="py-4 text-center">
-          <div className="img mb-4">
-            <img src={bootstrap} className="w-[50px] mx-auto" alt="bootstrap" />
+          <div className="py-4 text-center">
+            <div className="img mb-4">
+              <img
+                src={bootstrap}
+                className="w-[50px] mx-auto"
+                alt="bootstrap"
+              />
+            </div>
+            <p>bootstrap</p>
           </div>
-          <p>bootstrap</p>
-        </div>
-        <div className="py-4 text-center">
-          <div className="img mb-4">
-            <img
-              src={tailwindcss}
-              className="w-[50px] mx-auto"
-              alt="tailwindcss"
-            />
+          <div className="py-4 text-center">
+            <div className="img mb-4">
+              <img
+                src={tailwindcss}
+                className="w-[50px] mx-auto"
+                alt="tailwindcss"
+              />
+            </div>
+            <p>tailwindcss</p>
           </div>
-          <p>tailwindcss</p>
-        </div>
-        <div className="py-4 text-center">
-          <div className="img mb-4">
-            <img src={jQuery} className="w-[50px] mx-auto" alt="jQuery" />
+          <div className="py-4 text-center">
+            <div className="img mb-4">
+              <img src={jQuery} className="w-[50px] mx-auto" alt="jQuery" />
+            </div>
+            <p>jQuery</p>
           </div>
-          <p>jQuery</p>
-        </div>
-        <div className="py-4 text-center">
-          <div className="img mb-4">
-            <img src={sass} className="w-[50px] mx-auto" alt="sass" />
+          <div className="py-4 text-center">
+            <div className="img mb-4">
+              <img src={sass} className="w-[50px] mx-auto" alt="sass" />
+            </div>
+            <p>sass</p>
           </div>
-          <p>sass</p>
-        </div>
-        <div className="py-4 text-center">
-          <div className="img mb-4">
-            <img src={react} className="w-[50px] mx-auto" alt="react" />
+          <div className="py-4 text-center">
+            <div className="img mb-4">
+              <img src={react} className="w-[50px] mx-auto" alt="react" />
+            </div>
+            <p>react</p>
           </div>
-          <p>react</p>
-        </div>
-        <div className="py-4 text-center">
-          <div className="img mb-4">
-            <img
-              src={reactrouter}
-              className="w-[50px] h-[50px] mx-auto"
-              alt="reactrouter"
-            />
+          <div className="py-4 text-center">
+            <div className="img mb-4">
+              <img
+                src={reactrouter}
+                className="w-[50px] h-[50px] mx-auto"
+                alt="reactrouter"
+              />
+            </div>
+            <p>react router</p>
           </div>
-          <p>react router</p>
-        </div>
-        <div className="py-4 text-center">
-          <div className="img mb-4">
-            <img src={redux} className="w-[50px] mx-auto" alt="redux" />
+          <div className="py-4 text-center">
+            <div className="img mb-4">
+              <img src={redux} className="w-[50px] mx-auto" alt="redux" />
+            </div>
+            <p>redux</p>
           </div>
-          <p>redux</p>
-        </div>
-        <div className="py-4 text-center">
-          <div className="img mb-4">
-            <img src={npm} className="w-[50px] mx-auto" alt="npm" />
+          <div className="py-4 text-center">
+            <div className="img mb-4">
+              <img src={npm} className="w-[50px] mx-auto" alt="npm" />
+            </div>
+            <p>npm</p>
           </div>
-          <p>npm</p>
-        </div>
-        <div className="py-4 text-center">
-          <div className="img mb-4">
-            <img src={webpack} className="w-[50px] mx-auto" alt="webpack" />
+          <div className="py-4 text-center">
+            <div className="img mb-4">
+              <img src={webpack} className="w-[50px] mx-auto" alt="webpack" />
+            </div>
+            <p>webpack</p>
           </div>
-          <p>webpack</p>
-        </div>
-        <div className="py-4 text-center">
-          <div className="img mb-4">
-            <img src={git} className="w-[50px] mx-auto" alt="git" />
+          <div className="py-4 text-center">
+            <div className="img mb-4">
+              <img src={git} className="w-[50px] mx-auto" alt="git" />
+            </div>
+            <p>git</p>
           </div>
-          <p>git</p>
-        </div>
-        <div className="py-4 text-center">
-          <div className="img mb-4">
-            <img src={github} className="w-[50px] mx-auto" alt="github" />
+          <div className="py-4 text-center">
+            <div className="img mb-4">
+              <img src={github} className="w-[50px] mx-auto" alt="github" />
+            </div>
+            <p>github</p>
           </div>
-          <p>github</p>
-        </div>
-        <div className="py-4 text-center">
-          <div className="img mb-4">
-            <img src={postman} className="w-[50px] mx-auto" alt="postman" />
+          <div className="py-4 text-center">
+            <div className="img mb-4">
+              <img src={postman} className="w-[50px] mx-auto" alt="postman" />
+            </div>
+            <p>postman</p>
           </div>
-          <p>postman</p>
-        </div>
-      </Slider>
+        </Slider>
+      </div>
     </div>
   );
 }

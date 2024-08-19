@@ -9,6 +9,8 @@ import NotFound from "./Components/NotFound/NotFound";
 import DarkContextProvider from "../Context/DarkContext";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Education from "./Components/Education/Education";
+import Skills from "./Components/Skills/Skills";
 function App() {
   let routers = createBrowserRouter([
     {
@@ -18,6 +20,8 @@ function App() {
         { index: true, element: <Home /> },
         { path: "contact", element: <Contact /> },
         { path: "about", element: <About /> },
+        { path: "education", element: <Education /> },
+        { path: "skills", element: <Skills /> },
         { path: "*", element: <NotFound /> },
       ],
     },

@@ -8,7 +8,7 @@ export default function Layout() {
     <>
       <ParticlesComponent id="particles" />
       <Navbar />
-      <div className="pt-20 absolute top-0 left-0 w-full min-h-screen bg-transparent dark:text-white -z-10 flex justify-center items-center">
+      <div className="pt-20 overflow-x-hidden absolute top-0 left-0 w-full min-h-screen bg-transparent dark:text-white -z-10 flex justify-center items-center">
         <Outlet></Outlet>
       </div>
     </>

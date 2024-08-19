@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Education from "./Components/Education/Education";
 import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
+import { Toaster } from "react-hot-toast";
 function App() {
   let routers = createBrowserRouter([
     {
@@ -33,6 +34,7 @@ function App() {
     <>
     <DarkContextProvider>
       <RouterProvider router={routers}></RouterProvider>
+      <Toaster/>
     </DarkContextProvider>
     </>
   );

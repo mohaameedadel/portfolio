@@ -78,19 +78,34 @@ export default function Skills() {
         <Slider {...settings}>
           <div className="py-4 text-center ">
             <div className="img mb-4">
-              <img src={html} className="w-[50px] mx-auto" alt="html" />
+              <img
+                src={html}
+                loading="lazy"
+                className="w-[50px] mx-auto"
+                alt="html"
+              />
             </div>
             <p>HTML</p>
           </div>
           <div className="py-4 text-center">
             <div className="img mb-4">
-              <img src={css} className="w-[50px] mx-auto" alt="css" />
+              <img
+                src={css}
+                loading="lazy"
+                className="w-[50px] mx-auto"
+                alt="css"
+              />
             </div>
             <p>CSS</p>
           </div>
           <div className="py-4 text-center">
             <div className="img mb-4 ">
-              <img src={js} className="w-[50px] mx-auto" alt="js" />
+              <img
+                src={js}
+                loading="lazy"
+                className="w-[50px] mx-auto"
+                alt="js"
+              />
             </div>
             <p>javascript</p>
           </div>
@@ -98,6 +113,7 @@ export default function Skills() {
             <div className="img mb-4 ">
               <img
                 src={typescript}
+                loading="lazy"
                 className="w-[50px] mx-auto"
                 alt="typescript"
               />
@@ -108,6 +124,7 @@ export default function Skills() {
             <div className="img mb-4">
               <img
                 src={bootstrap}
+                loading="lazy"
                 className="w-[50px] mx-auto"
                 alt="bootstrap"
               />
@@ -118,6 +135,7 @@ export default function Skills() {
             <div className="img mb-4">
               <img
                 src={tailwindcss}
+                loading="lazy"
                 className="w-[50px] mx-auto rounded-full"
                 alt="tailwindcss"
               />
@@ -126,19 +144,34 @@ export default function Skills() {
           </div>
           <div className="py-4 text-center">
             <div className="img mb-4">
-              <img src={jQuery} className="w-[50px] mx-auto" alt="jQuery" />
+              <img
+                src={jQuery}
+                loading="lazy"
+                className="w-[50px] mx-auto"
+                alt="jQuery"
+              />
             </div>
             <p>jQuery</p>
           </div>
           <div className="py-4 text-center">
             <div className="img mb-4">
-              <img src={sass} className="w-[50px] mx-auto" alt="sass" />
+              <img
+                src={sass}
+                loading="lazy"
+                className="w-[50px] mx-auto"
+                alt="sass"
+              />
             </div>
             <p>sass</p>
           </div>
           <div className="py-4 text-center">
             <div className="img mb-4">
-              <img src={react} className="w-[50px] mx-auto" alt="react" />
+              <img
+                src={react}
+                loading="lazy"
+                className="w-[50px] mx-auto"
+                alt="react"
+              />
             </div>
             <p>react</p>
           </div>
@@ -146,6 +179,7 @@ export default function Skills() {
             <div className="img mb-4">
               <img
                 src={reactrouter}
+                loading="lazy"
                 className="w-[50px] h-[50px] mx-auto"
                 alt="reactrouter"
               />
@@ -154,7 +188,12 @@ export default function Skills() {
           </div>
           <div className="py-4 text-center">
             <div className="img mb-4">
-              <img src={redux} className="w-[50px] h-[50px] mx-auto" alt="redux" />
+              <img
+                src={redux}
+                loading="lazy"
+                className="w-[50px] h-[50px] mx-auto"
+                alt="redux"
+              />
             </div>
             <p>redux</p>
           </div>
@@ -162,6 +201,7 @@ export default function Skills() {
             <div className="img mb-4">
               <img
                 src={tanstackquery}
+                loading="lazy"
                 className="w-[50px] mx-auto"
                 alt="react query"
               />
@@ -170,31 +210,56 @@ export default function Skills() {
           </div>
           <div className="py-4 text-center">
             <div className="img mb-4">
-              <img src={npm} className="w-[50px] mx-auto" alt="npm" />
+              <img
+                src={npm}
+                loading="lazy"
+                className="w-[50px] mx-auto"
+                alt="npm"
+              />
             </div>
             <p>npm</p>
           </div>
           <div className="py-4 text-center">
             <div className="img mb-4">
-              <img src={webpack} className="w-[50px] mx-auto" alt="webpack" />
+              <img
+                src={webpack}
+                loading="lazy"
+                className="w-[50px] mx-auto"
+                alt="webpack"
+              />
             </div>
             <p>webpack</p>
           </div>
           <div className="py-4 text-center">
             <div className="img mb-4">
-              <img src={git} className="w-[50px] mx-auto" alt="git" />
+              <img
+                src={git}
+                loading="lazy"
+                className="w-[50px] mx-auto"
+                alt="git"
+              />
             </div>
             <p>git</p>
           </div>
           <div className="py-4 text-center">
             <div className="img mb-4">
-              <img src={github} className="w-[50px] mx-auto" alt="github" />
+              <img
+                src={github}
+                loading="lazy"
+                className="w-[50px] mx-auto"
+                alt="github"
+              />
             </div>
             <p>github</p>
           </div>
           <div className="py-4 text-center">
             <div className="img mb-4">
-              <img src={postman} className="w-[50px] mx-auto" alt="postman" />
+              <img
+                src={postman}
+                loading="lazy"
+                className="w-[50px] mx-auto"
+                alt="postman"
+              />
             </div>
             <p>postman</p>
           </div>

@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import Heading from "../Heading/Heading";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import freshcart from "../../assets/images/projects/freshcart/freshcart.png";
 import brands from "../../assets/images/projects/freshcart/brands.png";
@@ -57,11 +59,18 @@ export default function Projects() {
     slidesToScroll: 1,
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <div className="container my-6 self-start ">
       <Heading text={"projects"} />
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-8 gap-8">
-        <div className="freshcart shadow-xl">
+        <div data-aos="flip-left" className="freshcart shadow-xl">
           <div className="h-full flex flex-col bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className="flex flex-col justify-between h-full">
               <div>
@@ -69,6 +78,7 @@ export default function Projects() {
                   <Slider {...settings}>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={freshcart}
                         alt="freshcart e-commerce"
@@ -76,6 +86,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={categories}
                         alt="freshcart e-commerce"
@@ -83,6 +94,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={brands}
                         alt="freshcart e-commerce"
@@ -90,6 +102,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={cart}
                         alt="freshcart e-commerce"
@@ -97,6 +110,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={wishlist}
                         alt="freshcart e-commerce"
@@ -104,6 +118,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={forgetpass}
                         alt="freshcart e-commerce"
@@ -111,6 +126,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={login}
                         alt="freshcart e-commerce"
@@ -118,6 +134,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={reges}
                         alt="freshcart e-commerce"
@@ -206,7 +223,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="startframework shadow-xl">
+        <div data-aos="flip-right" className="startframework shadow-xl">
           <div className="h-full flex flex-col bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className="flex flex-col justify-between h-full">
               <div>
@@ -214,6 +231,7 @@ export default function Projects() {
                   <Slider {...settings}>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={startframework}
                         alt="start framework"
@@ -221,6 +239,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={about}
                         alt="start framework"
@@ -228,6 +247,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={portfolio}
                         alt="start framework"
@@ -235,6 +255,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={contact}
                         alt="start framework"
@@ -319,7 +340,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="yummy shadow-xl">
+        <div data-aos="flip-left" className="yummy shadow-xl">
           <div className="h-full flex flex-col bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className="flex flex-col justify-between h-full">
               <div>
@@ -327,6 +348,7 @@ export default function Projects() {
                   <Slider {...settings}>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={yummy}
                         alt="yummy"
@@ -334,6 +356,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={searsh}
                         alt="yummy"
@@ -341,6 +364,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={catgories}
                         alt="yummy"
@@ -348,6 +372,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={areas}
                         alt="yummy"
@@ -355,6 +380,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={ingred}
                         alt="yummy"
@@ -362,6 +388,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={details}
                         alt="yummy"
@@ -450,7 +477,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="chart shadow-xl">
+        <div data-aos="flip-right" className="chart shadow-xl">
           <div className="h-full flex flex-col bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className="flex flex-col justify-between h-full">
               <div>
@@ -458,6 +485,7 @@ export default function Projects() {
                   <Slider {...settings}>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={chart}
                         alt="chart"
@@ -465,6 +493,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={chart2}
                         alt="chart"
@@ -472,6 +501,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={chart3}
                         alt="chart"
@@ -557,7 +587,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="quiz shadow-xl">
+        <div data-aos="flip-left" className="quiz shadow-xl">
           <div className="h-full flex flex-col bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className="flex flex-col justify-between h-full">
               <div>
@@ -565,6 +595,7 @@ export default function Projects() {
                   <Slider {...settings}>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={quiz1}
                         alt="quiz app"
@@ -572,6 +603,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={quiz2}
                         alt="quiz app"
@@ -579,6 +611,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={quiz3}
                         alt="quiz app"
@@ -661,7 +694,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="egyptianParty shadow-xl">
+        <div data-aos="flip-right" className="egyptianParty shadow-xl">
           <div className="h-full flex flex-col bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className="flex flex-col justify-between h-full">
               <div>
@@ -669,6 +702,7 @@ export default function Projects() {
                   <Slider {...settings}>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={egyptianparty1}
                         alt="egyptian party"
@@ -676,6 +710,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={egyptianparty2}
                         alt="egyptian party"
@@ -683,6 +718,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={egyptianparty3}
                         alt="egyptian party"
@@ -764,7 +800,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="egyptianParty shadow-xl">
+        <div data-aos="flip-left" className="gameover shadow-xl">
           <div className="h-full flex flex-col bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className="flex flex-col justify-between h-full">
               <div>
@@ -772,6 +808,7 @@ export default function Projects() {
                   <Slider {...settings}>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={gameover1}
                         alt="gameover"
@@ -779,6 +816,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={gameover2}
                         alt="gameover"
@@ -786,6 +824,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={gameover3}
                         alt="gameover"
@@ -793,6 +832,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={gameover4}
                         alt="gameover"
@@ -800,6 +840,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={gameover5}
                         alt="gameover"
@@ -884,7 +925,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="egyptianParty shadow-xl">
+        <div data-aos="flip-right" className="crudsystem shadow-xl">
           <div className="h-full flex flex-col bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className="flex flex-col justify-between h-full">
               <div>
@@ -892,6 +933,7 @@ export default function Projects() {
                   <Slider {...settings}>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={crud1}
                         alt="gameover"
@@ -899,6 +941,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={crud2}
                         alt="gameover"
@@ -906,6 +949,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={crud3}
                         alt="gameover"
@@ -913,6 +957,7 @@ export default function Projects() {
                     </div>
                     <div className="focus:outline-none">
                       <img
+                        loading="lazy"
                         className="rounded-t-lg w-full block"
                         src={crud4}
                         alt="gameover"

@@ -26,7 +26,10 @@ export default function Home() {
               <span className="text-4xl text-gray-400 mb-4 block font-main">
                 Hello👋 I'm{" "}
               </span>
-              <Link to={"/about"} className="text-6xl md:text-8xl mb-4 font-main block">
+              <Link
+                to={"/about"}
+                className="text-6xl md:text-8xl mb-4 font-main block"
+              >
                 <span className="name font-extrabold">Mohamed Adel</span>
               </Link>
               <ReactTyped
@@ -61,7 +64,10 @@ export default function Home() {
                   href="https://www.instagram.com/mohaameeed_adel/"
                   target="blank"
                 >
-                  <i className="fa-brands fa-instagram text-2xl text-mainColor duration-200 hover:text-hoverColor"></i>
+                  <i className="fa-brands fa-instagram text-2xl me-4 text-mainColor duration-200 hover:text-hoverColor"></i>
+                </a>
+                <a href="https://wa.me/+2001143787573" target="blank">
+                  <i className="fa-brands fa-whatsapp text-2xl text-mainColor duration-200 hover:text-hoverColor"></i>
                 </a>
               </div>
             </div>

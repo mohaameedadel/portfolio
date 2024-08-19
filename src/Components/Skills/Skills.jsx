@@ -20,6 +20,7 @@ import tanstackquery from "../../assets/images/skills/tanstackquery.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Heading from "../Heading/Heading";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 export default function Skills() {
   var settings = {
     dots: false,
@@ -73,6 +74,14 @@ export default function Skills() {
   }, []);
   return (
     <div className="container self-start my-6">
+      <div className="size-80 mx-auto">
+        <DotLottieReact
+          src="https://lottie.host/7c8a7637-f97c-40d7-8c7f-9ff689f56589/2RHSrr6pzn.json"
+          loop
+          autoplay
+          
+        />
+      </div>
       <Heading text={"Skills"} />
       <div data-aos="zoom-in" className="slider-container my-8 ">
         <Slider {...settings}>
@@ -265,6 +274,7 @@ export default function Skills() {
           </div>
         </Slider>
       </div>
+      
     </div>
   );
 }

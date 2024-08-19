@@ -16,7 +16,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className="flex justify-center items-center pt-8 pb-5 mb-7 container">
+      <div className="flex justify-center items-center pt-2 pb-5 mb-7 container">
         <div className="flex flex-col-reverse md:flex-row gap-10 lg:gap-24">
           <div
             data-aos="fade-right"
@@ -70,6 +70,13 @@ export default function Home() {
                   <i className="fa-brands fa-whatsapp text-2xl text-mainColor duration-200 hover:text-hoverColor"></i>
                 </a>
               </div>
+              <a
+                href="#"
+                className="flex justify-center items-center px-2 py-1 bg-mainColor w-fit rounded-full mt-4 mx-auto md:mx-0 group "
+              >
+                Get Resume
+                <i className="fa-solid fa-circle-arrow-down group-hover:ps-2 duration-500"></i>
+              </a>
             </div>
           </div>
           <div

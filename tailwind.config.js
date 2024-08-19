@@ -14,6 +14,7 @@ export default {
       },
       fontFamily: {
         main: ["New Amsterdam", "sans-serif"],
+        basic :["Roboto", "sans-serif"]
       },
     },
   },

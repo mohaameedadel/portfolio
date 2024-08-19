@@ -19,6 +19,24 @@ export default function Navbar() {
     }
   }
 
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   useEffect(() => {
     if (localStorage.getItem("theme") == "dark") {
       html.classList.add("dark");
@@ -33,8 +51,8 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 shadow-lg fixed top-0 left-0 right-0 z-[999] dark:border-b dark:border-mainColor">
-        <div className="container flex flex-wrap items-center justify-between mx-auto p-4">
+      <nav className={` border-gray-200  shadow-lg fixed top-0 left-0 right-0 z-[999] dark:border-b dark:border-mainColor duration-500 ${scrolled?"py-2 dark:bg-gray-900 bg-white":"py-4"}`}>
+        <div className="container flex flex-wrap items-center justify-between mx-auto">
           <Link
             onClick={() => setOpen(false)}
             to=""
@@ -61,10 +79,11 @@ export default function Navbar() {
               )}
             </div>
             <button
+
               onClick={() => setOpen(!open)}
               data-collapse-toggle="navbar-cta"
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-mainColor rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-mainColor dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex rounded-full items-center p-2 w-10 h-10 justify-center text-sm text-mainColor md:hidden hover:bg-gray-100 focus:outline-none bg-gray-200 dark:text-mainColor dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-cta"
               aria-expanded="false"
             >

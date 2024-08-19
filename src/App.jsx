@@ -7,7 +7,8 @@ import Contact from "./Components/Contact/Contact";
 import About from "./Components/About/About";
 import NotFound from "./Components/NotFound/NotFound";
 import DarkContextProvider from "../Context/DarkContext";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 function App() {
   let routers = createBrowserRouter([
     {

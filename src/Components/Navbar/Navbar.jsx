@@ -56,10 +56,10 @@ export default function Navbar() {
           <Link
             onClick={() => setOpen(false)}
             to=""
-            className="flex items-center space-x-3 rtl:space-x-reverse cursor-pointer"
+            className="flex items-center space-x-3 rtl:space-x-reverse cursor-pointer hover:scale-[1.02] duration-200"
           >
             <img src={logo} className="h-8" alt="Flowbite Logo" />
-            <span className="self-center font-main tracking-widest text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className=" self-center font-main tracking-widest text-2xl font-semibold whitespace-nowrap dark:text-white">
               Mohamed Adel
             </span>
           </Link>
@@ -118,6 +118,14 @@ export default function Navbar() {
                   className="font-main tracking-widest block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainColor md:dark:hover:text-mainColor dark:text-white dark:hover:bg-gray-700 dark:hover:text-mainColor md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   About
+                </NavLink>
+              </li>
+              <li onClick={() => setOpen(false)}>
+                <NavLink
+                  to="projects"
+                  className="font-main tracking-widest block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainColor md:dark:hover:text-mainColor dark:text-white dark:hover:bg-gray-700 dark:hover:text-mainColor md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  projects
                 </NavLink>
               </li>
               <li onClick={() => setOpen(false)}>

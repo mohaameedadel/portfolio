@@ -14,7 +14,7 @@ export default function About() {
 
   return (
     <>
-      <div className=" container self-start pt-8 pb-5">
+      <div className=" container self-start my-6">
         <div >
           <Heading text={"About Me"} />
           <div className="my-8  flex flex-col-reverse md:flex-row justify-center items-center gap-4">
@@ -25,13 +25,13 @@ export default function About() {
                   <span className="text-mainColor font-semibold px-2">
                     Mohamed Adel
                   </span>
-                  , and I am passionate about front-end development.
+                  , I specialize in RectJs <br /> and I am passionate about front-end development.
                   <br /> Graduated from the Faculty of Computer & Informatics,
                   Tanta University,
                   <br /> with a Bachelor’s degree in Information Technology.
                 </p>
-                <p className="text-2xl">
-                  Besides Mobile development, I like ⚽️ Football, 📚 Reading,
+                <p className="text-2xl mt-4">
+                  Besides Web development, <br /> I like ⚽️ Football, 📚 Reading,
                   🍿Movies, and️ 🎮 Gaming.
                 </p>
               </div>

@@ -22,7 +22,13 @@ export default function Education() {
               <p>Bachelor of Informatin Technology</p>
               <p>
                 Faculty of Computer & Informatics,{" "}
-                <span className="text-mainColor">Tanta University</span>
+                <a
+                  target="blank"
+                  href="https://ci.tanta.edu.eg/"
+                  className="text-mainColor hover:underline"
+                >
+                  Tanta University
+                </a>
               </p>
               <p className="mt-2">
                 Completed a 4-year program and graduated with Excellence with
@@ -35,7 +41,7 @@ export default function Education() {
             <div>
               <p>March 2024 - August 2024</p>
               <p>Diploma, Front End Developer</p>
-              <p>Route Academy</p>
+              <a target="blank" href="https://www.linkedin.com/company/routeacademy/mycompany/ps;" className="text-mainColor hover:underline">Route Academy</a>
             </div>
           </div>
         </div>

@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Education from "./Components/Education/Education";
 import Skills from "./Components/Skills/Skills";
+import Projects from "./Components/Projects/Projects";
 function App() {
   let routers = createBrowserRouter([
     {
@@ -22,6 +23,7 @@ function App() {
         { path: "about", element: <About /> },
         { path: "education", element: <Education /> },
         { path: "skills", element: <Skills /> },
+        { path: "projects", element: <Projects /> },
         { path: "*", element: <NotFound /> },
       ],
     },

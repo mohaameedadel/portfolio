@@ -72,6 +72,7 @@ export default function Home() {
           >
             <img
               src={me}
+              loading="lazy"
               className="rounded-full shadow-2xl w-72 md:w-full"
               alt="me"
             />

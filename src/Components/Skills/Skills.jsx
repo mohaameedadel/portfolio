@@ -16,6 +16,7 @@ import sass from "../../assets/images/skills/sass.png";
 import webpack from "../../assets/images/skills/webpack.png";
 import tailwindcss from "../../assets/images/skills/tailwindcss.png";
 import typescript from "../../assets/images/skills/typescript.png";
+import tanstackquery from "../../assets/images/skills/tanstackquery.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Heading from "../Heading/Heading";
@@ -39,6 +40,8 @@ export default function Skills() {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          initialSlide: 0,
+          speed: 2000,
         },
       },
       {
@@ -46,6 +49,8 @@ export default function Skills() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          initialSlide: 0,
+          speed: 2000,
         },
       },
       {
@@ -53,6 +58,8 @@ export default function Skills() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          initialSlide: 0,
+          speed: 2000,
         },
       },
     ],
@@ -65,7 +72,7 @@ export default function Skills() {
     AOS.refresh();
   }, []);
   return (
-    <div className="container">
+    <div className="container self-start my-6">
       <Heading text={"Skills"} />
       <div data-aos="zoom-in" className="slider-container my-8 ">
         <Slider {...settings}>
@@ -111,7 +118,7 @@ export default function Skills() {
             <div className="img mb-4">
               <img
                 src={tailwindcss}
-                className="w-[50px] mx-auto"
+                className="w-[50px] mx-auto rounded-full"
                 alt="tailwindcss"
               />
             </div>
@@ -147,9 +154,19 @@ export default function Skills() {
           </div>
           <div className="py-4 text-center">
             <div className="img mb-4">
-              <img src={redux} className="w-[50px] mx-auto" alt="redux" />
+              <img src={redux} className="w-[50px] h-[50px] mx-auto" alt="redux" />
             </div>
             <p>redux</p>
+          </div>
+          <div className="py-4 text-center">
+            <div className="img mb-4">
+              <img
+                src={tanstackquery}
+                className="w-[50px] mx-auto"
+                alt="react query"
+              />
+            </div>
+            <p>react query</p>
           </div>
           <div className="py-4 text-center">
             <div className="img mb-4">

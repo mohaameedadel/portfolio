@@ -71,7 +71,8 @@ export default function Home() {
                 </a>
               </div>
               <a
-                href="#"
+                target="blank"
+                href="https://drive.google.com/file/d/1krgcib_UOHT8ZNszECF7JpmbkWkrWaiG/view?usp=sharing"
                 className="flex justify-center items-center px-2 py-1 bg-mainColor w-fit rounded-full mt-4 mx-auto md:mx-0 group "
               >
                 Get Resume

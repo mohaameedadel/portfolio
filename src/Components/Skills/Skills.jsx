@@ -17,6 +17,11 @@ import webpack from "../../assets/images/skills/webpack.png";
 import tailwindcss from "../../assets/images/skills/tailwindcss.png";
 import typescript from "../../assets/images/skills/typescript.png";
 import tanstackquery from "../../assets/images/skills/tanstackquery.png";
+import nextjs from "../../assets/images/skills/nextjs.png";
+import mui from "../../assets/images/skills/mui.png";
+import figma from "../../assets/images/skills/figma-logo-512.webp";
+
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Heading from "../Heading/Heading";
@@ -152,6 +157,12 @@ export default function Skills() {
           </div>
           <div className="py-4 text-center">
             <div className="img mb-4">
+              <img src={nextjs} className="w-[50px] mx-auto" alt="nextjs" />
+            </div>
+            <p>nextjs</p>
+          </div>
+          <div className="py-4 text-center">
+            <div className="img mb-4">
               <img
                 src={reactrouter}
                 className="w-[50px] h-[50px] mx-auto"
@@ -182,6 +193,12 @@ export default function Skills() {
           </div>
           <div className="py-4 text-center">
             <div className="img mb-4">
+              <img src={mui} className="w-[50px] mx-auto" alt="mui" />
+            </div>
+            <p>Material UI</p>
+          </div>
+          <div className="py-4 text-center">
+            <div className="img mb-4">
               <img src={npm} className="w-[50px] mx-auto" alt="npm" />
             </div>
             <p>npm</p>
@@ -209,6 +226,12 @@ export default function Skills() {
               <img src={postman} className="w-[50px] mx-auto" alt="postman" />
             </div>
             <p>postman</p>
+          </div>
+          <div className="py-4 text-center">
+            <div className="img mb-4">
+              <img src={figma} className="w-[50px] mx-auto" alt="figma" />
+            </div>
+            <p>figma</p>
           </div>
         </Slider>
       </div>

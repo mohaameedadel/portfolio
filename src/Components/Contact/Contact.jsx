@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Heading from "../Heading/Heading";
 export default function Contact() {
   function sendData() {
     emailjs
@@ -55,7 +56,8 @@ export default function Contact() {
   }, []);
   return (
     <>
-      <div className="container">
+      <div className="container self-start my-6">
+      <Heading text={"contact Me"} />
         <div data-aos="fade-down" className="icons mt-4 text-center">
           <a href="https://www.linkedin.com/in/mohaameedadel/" target="blank">
             <i className="fa-brands fa-linkedin text-2xl me-4 text-mainColor duration-200 hover:text-hoverColor"></i>

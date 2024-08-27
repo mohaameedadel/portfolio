@@ -36,7 +36,7 @@ export default function Home() {
                 backSpeed={40}
                 loop={true}
                 showCursor={true}
-                strings={["Frontend Developer", "Web Developer"]}
+                strings={["Frontend Developer", "Web Developer", "Reactjs / nextjs"]}
                 typeSpeed={50}
                 startDelay={300}
                 backDelay={1000}
@@ -72,7 +72,7 @@ export default function Home() {
               </div>
               <a
                 target="blank"
-                href="https://drive.google.com/file/d/1krgcib_UOHT8ZNszECF7JpmbkWkrWaiG/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Hikp_2rtC4QVgIGQKtU0Jp-17ln3k5QG/view?usp=sharing"
                 className="flex justify-center items-center px-2 py-1 bg-mainColor w-fit rounded-full mt-4 mx-auto md:mx-0 group "
               >
                 Get Resume

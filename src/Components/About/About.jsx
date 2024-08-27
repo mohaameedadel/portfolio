@@ -3,6 +3,7 @@ import Heading from "../Heading/Heading";
 import me from "../../assets/images/me2.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 export default function About() {
   useEffect(() => {
@@ -19,13 +20,13 @@ export default function About() {
           <Heading text={"About Me"} />
           <div className="my-8  flex flex-col-reverse md:flex-row justify-center items-center gap-4">
             <div className="flex justify-center items-center md:w-3/5">
-              <div data-aos="zoom-in-right">
+              <div data-aos="fade-right">
                 <p className="text-2xl ">
                   Hi I'm
-                  <span className="text-mainColor font-semibold px-2">
+                  <Link to={"/"} className="text-mainColor font-semibold px-2">
                     Mohamed Adel
-                  </span>
-                  , I specialize in RectJs <br /> and I am passionate about
+                  </Link>
+                  , I specialize in RectJs/nextjs <br /> and I am passionate about
                   front-end development.
                   <br /> Graduated from the Faculty of Computer & Informatics,
                   Tanta University,
@@ -37,7 +38,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div data-aos="flip-right" className="overflow-hidden ">
+            <div data-aos="zoom-in-left" className="overflow-hidden ">
               <img src={me} className=" w-80 rounded-full block" alt="" />
             </div>
           </div>

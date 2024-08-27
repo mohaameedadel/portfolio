@@ -67,7 +67,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="container my-6 self-start ">
+    <div className="container my-6 self-start">
       <Heading text={"projects"} />
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-8 gap-8">
         <div data-aos="flip-left" className="freshcart shadow-xl">

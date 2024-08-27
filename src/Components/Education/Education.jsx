@@ -31,8 +31,7 @@ export default function Education() {
                 </a>
               </p>
               <p className="mt-2">
-                Completed a 4-year program and graduated with Excellence with
-                Honour (B),
+                Completed a 4-year program and graduated with very good (B),
               </p>
             </div>
           </div>
@@ -41,7 +40,13 @@ export default function Education() {
             <div>
               <p>March 2024 - August 2024</p>
               <p>Diploma, Front End Developer</p>
-              <a target="blank" href="https://www.linkedin.com/company/routeacademy/mycompany/ps;" className="text-mainColor hover:underline">Route Academy</a>
+              <a
+                target="blank"
+                href="https://www.linkedin.com/company/routeacademy/mycompany/ps;"
+                className="text-mainColor hover:underline"
+              >
+                Route Academy
+              </a>
             </div>
           </div>
         </div>

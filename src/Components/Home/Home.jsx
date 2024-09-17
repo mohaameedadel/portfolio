@@ -1,13 +1,15 @@
-import React, { useContext, useEffect } from "react";
+import React, {  useEffect } from "react";
 import me from "../../assets/images/me.png";
+import me2 from "../../assets/images/me1.jpg";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ReactTyped } from "react-typed";
-import { DarkContext } from "../../../Context/DarkContext";
+
+
 
 export default function Home() {
-  let { dark } = useContext(DarkContext);
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -36,7 +38,11 @@ export default function Home() {
                 backSpeed={40}
                 loop={true}
                 showCursor={true}
-                strings={["Frontend Developer", "Web Developer", "Reactjs / nextjs"]}
+                strings={[
+                  "Frontend Developer",
+                  "Web Developer",
+                  "Reactjs / nextjs",
+                ]}
                 typeSpeed={50}
                 startDelay={300}
                 backDelay={1000}
@@ -72,7 +78,7 @@ export default function Home() {
               </div>
               <a
                 target="blank"
-                href="https://drive.google.com/file/d/1Hikp_2rtC4QVgIGQKtU0Jp-17ln3k5QG/view?usp=sharing"
+                href="https://drive.google.com/file/d/1PeY_l9V0z3oa9QzNCW8aVrgsOSgED4cN/view?usp=sharing"
                 className="flex justify-center items-center px-2 py-1 bg-mainColor w-fit rounded-full mt-4 mx-auto md:mx-0 group "
               >
                 Get Resume
@@ -85,8 +91,8 @@ export default function Home() {
             className="img flex justify-center items-center"
           >
             <img
-              src={me}
-              className="rounded-full shadow-2xl w-72 md:w-full"
+              src={me2}
+              className="rounded-full shadow-2xl w-72 md:w-96"
               alt="me"
             />
           </div>

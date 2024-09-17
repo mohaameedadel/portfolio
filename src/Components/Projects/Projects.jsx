@@ -48,6 +48,15 @@ import crud2 from "../../assets/images/projects/crudsystem/crud2.png";
 import crud3 from "../../assets/images/projects/crudsystem/crud3.png";
 import crud4 from "../../assets/images/projects/crudsystem/crud4.png";
 
+import trivibeSignIn from "../../assets/images/projects/trivibe/trivibeSignIn.png";
+import trivibeSignUp from "../../assets/images/projects/trivibe/trivibeSignUp.png";
+import trivibeHome from "../../assets/images/projects/trivibe/trivibeHome.png";
+import trivibeProfile from "../../assets/images/projects/trivibe/trivibeProfile.png";
+import trivibeChangePass from "../../assets/images/projects/trivibe/trivibeChangePass.png";
+import trivibeAddPost from "../../assets/images/projects/trivibe/trivibeAddPost.png";
+import trivibeChangeImg from "../../assets/images/projects/trivibe/trivibeChangeImg.png";
+import trivibeUpdatePost from "../../assets/images/projects/trivibe/trivibeUpdatePost.png";
+
 export default function Projects() {
   var settings = {
     autoplay: true,
@@ -70,6 +79,147 @@ export default function Projects() {
     <div className="container my-6 self-start">
       <Heading text={"projects"} />
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-8 gap-8">
+        <div data-aos="flip-right" className="trivibe shadow-xl">
+          <div className="h-full flex flex-col bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div className="flex flex-col justify-between h-full">
+              <div>
+                <div className="slider-container mb-6">
+                  <Slider {...settings}>
+                    <div className="focus:outline-none">
+                      <img
+                        className="rounded-t-lg w-full block"
+                        src={trivibeSignUp}
+                        alt="trivibe social app"
+                      />
+                    </div>
+                    <div className="focus:outline-none">
+                      <img
+                        className="rounded-t-lg w-full block"
+                        src={trivibeSignIn}
+                        alt="trivibe social app"
+                      />
+                    </div>
+                    <div className="focus:outline-none">
+                      <img
+                        className="rounded-t-lg w-full block"
+                        src={trivibeHome}
+                        alt="trivibe social app"
+                      />
+                    </div>
+                    <div className="focus:outline-none">
+                      <img
+                        className="rounded-t-lg w-full block"
+                        src={trivibeProfile}
+                        alt="trivibe social app"
+                      />
+                    </div>
+                    <div className="focus:outline-none">
+                      <img
+                        className="rounded-t-lg w-full block"
+                        src={trivibeChangePass}
+                        alt="trivibe social app"
+                      />
+                    </div>
+                    <div className="focus:outline-none">
+                      <img
+                        className="rounded-t-lg w-full block"
+                        src={trivibeChangeImg}
+                        alt="trivibe social app"
+                      />
+                    </div>
+                    <div className="focus:outline-none">
+                      <img
+                        className="rounded-t-lg w-full block"
+                        src={trivibeAddPost}
+                        alt="trivibe social app"
+                      />
+                    </div>
+                    <div className="focus:outline-none">
+                      <img
+                        className="rounded-t-lg w-full block"
+                        src={trivibeUpdatePost}
+                        alt="trivibe social app"
+                      />
+                    </div>
+                  </Slider>
+                </div>
+
+                <div className="p-5">
+                  <a target="blank" href="https://socialapp-delta.vercel.app/">
+                    <h5 className="hover:text-mainColor font-main tracking-widest duration-200 w-fit mb-2 text-2xl font-bold text-gray-900 dark:text-white">
+                      TriVibe
+                    </h5>
+                  </a>
+                  <p className="text-lg mb-3">
+                    <span className="text-mainColor">MyRole:</span> Frontend
+                    Developer
+                  </p>
+                  <p className="text-lg mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <span className="text-mainColor">description:</span> This
+                    project is A social app to improve relationships by
+                    providing a constant and instant communication platform,
+                    allowing people to stay connected regardless of geographical
+                    distance. this project implemented with
+                    <span className="text-mainColor ps-1">Backend</span> by
+                    using Apis.
+                  </p>
+                  <p className="text-lg mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <span className="text-mainColor">technologies:</span> [
+                    Nextjs, typescript, Tailwindcss, react icons, redux toolkit,
+                    context Api, Material-Ui, react-hooks, Axios, formik, yup,
+                    react-loader-spinner, ]
+                  </p>
+                </div>
+              </div>
+              <div className="px-5 pb-5">
+                <a
+                  target="blank"
+                  href="https://github.com/mohaameedadel/socialApp"
+                  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center hover:underline  hover:text-mainColor duration-200  "
+                >
+                  Github Repo
+                  <svg
+                    className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+                <a
+                  target="blank"
+                  href="https://socialapp-delta.vercel.app/"
+                  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center hover:underline hover:text-mainColor duration-200  "
+                >
+                  Demo Live
+                  <svg
+                    className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div data-aos="flip-left" className="freshcart shadow-xl">
           <div className="h-full flex flex-col bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className="flex flex-col justify-between h-full">
